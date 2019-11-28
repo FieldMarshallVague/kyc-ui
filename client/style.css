@@ -14,21 +14,66 @@ body {
   }
 }
 
+.container{
+  max-width:750px;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  height: 120px;
+  align-items: center;
+  padding: 1em;
+  /* margin-bottom: 2em; */
 }
 
-nav.logo img {
-  width: 250px;
-  height: 125px;
+nav img.logo {
+  width: 150px;
+  height: 40px;
+  position: relative;
+  top: -8px;
 }
 
 nav ul {
   display: flex;
-
+  list-style: none;
+  padding-left: 0;
 }
 
 nav ul li {
   padding: 1em 2em;
+}
+
+nav ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:hover,
+nav ul li a:active
+{
+  color: #333;
+}
+
+
+nav ul li a:hover {
+  color: #24B47E;
+
+}
+
+.copy {
+  padding: 0 2em;
+}
+.copy h2 {
+  line-height:3em;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 2em;
+}
+.copy p {
+  margin: 1em 0;
 }

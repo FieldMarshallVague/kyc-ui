@@ -24,6 +24,13 @@ const config = {
     ]
   },
 
+  watch: true, 
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+
+  },
+
   module: {
     rules: [
       {
@@ -41,7 +48,8 @@ const config = {
       minify: { collapseWhitespace: true }
     }),
     new CopyPlugin([
-      { from: `${__dirname}/client/img`, to: `${__dirname}/bin/client/img`},
+      { from: `${__dirname}/client/`, to: `${__dirname}/bin/client/`},
+      { from: `${__dirname}/client/img`, to: `${__dirname}/bin/client/img`},      
     ])
   ],
 
