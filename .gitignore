@@ -1,0 +1,10 @@
+/node_modules
+/lib
+/.DS_Store
+/dist
+/secrets.json
+/key.pem
+/cert.pem
+.DS_Store
+/appBin
+/bin/
