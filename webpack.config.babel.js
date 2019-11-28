@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyPlugin from 'copy-webpack-plugin';
 
 const ENV = process.env.NODE_ENV || 'development';
 
@@ -38,7 +39,10 @@ const config = {
     new HtmlWebpackPlugin({
       template: './index.html',
       minify: { collapseWhitespace: true }
-    })
+    }),
+    new CopyPlugin([
+      { from: `${__dirname}/client/img`, to: `${__dirname}/bin/client/img`},
+    ])
   ],
 
   stats: { colors: true },

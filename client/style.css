@@ -1,3 +1,5 @@
+@import 'css-reset.css';
+
 html, body {
   height: 100%;
   margin: 0;
@@ -10,4 +12,23 @@ body {
     position: relative;
     top: 10%;
   }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.logo img {
+  width: 250px;
+  height: 125px;
+}
+
+nav ul {
+  display: flex;
+
+}
+
+nav ul li {
+  padding: 1em 2em;
 }
