@@ -67,12 +67,13 @@ nav ul li a:hover {
 }
 
 .copy {
-  padding: 0 2em;
+  padding: 0 3.2em;
 }
 .copy h2 {
-  line-height:3em;
-  border-bottom: 1px solid #aaa;
+  line-height: 1.6em;
+  border-bottom: 1px solid #ccc;
   margin-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 .copy p {
   margin: 1em 0;
