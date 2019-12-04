@@ -1,5 +1,5 @@
 {
-  "name": "onfido-sdk-ui-app",
+  "name": "radix-onfido-kyc",
   "version": "0.0.2",
   "description": "Sample App for JavaScript SDK view layer for Onfido identity verification",
   "scripts": {
@@ -23,7 +23,7 @@
     "src"
   ],
   "license": "MIT",
-  "author": "Ricardo Freitas <ricardo.freitas@onfido.com> (https://github.com/rfreitas)",
+  "author": "",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.4.4",

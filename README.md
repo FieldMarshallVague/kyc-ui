@@ -19,7 +19,12 @@ Example:
 
 Git clone the project and run `npm install` and then `npm run prestart`.
 
-The server generates SSL certificates and defaults to the port 8090.  Visit https://localhost:8090/ to view it.  You'll probably have to accept 'unsafe' access to it as the certs are self-signed.
+The server generates its own SSL certificates and defaults to the port 8090.  
+You can run this with VS Code, by choosing 'launch project' in the debugging tab.  If this doesn't start, check it's pointing to 'server/index.js' in the debugging config file (it uses an ES6 Module parser for the server.js file).
+
+Visit https://localhost:8090/ to view it.  
+
+You'll probably have to accept 'unsafe' access to it as the certs are self-signed.
 
 ## Internals
 
